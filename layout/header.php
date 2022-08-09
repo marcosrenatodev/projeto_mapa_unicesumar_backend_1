@@ -4,40 +4,40 @@
 <head>
   <meta charset="UTF-8" />
   <title>Dona Rita Marmitas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     /*Estilo da barra de navegacao*/
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+    .navbar {
       overflow: hidden;
       background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
     }
 
-    li {
+    .navbar a {
       float: left;
-    }
-
-    li a {
       display: block;
-      color: white;
+      color: #f2f2f2;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
+      font-size: 17px;
     }
 
-    /* li a:hover:not(.active) {
-  background-color: #111;
-} */
-
-    .active {
-      background-color: #04AA6D;
-
+    .navbar a:hover {
+      background: #ddd;
+      color: black;
     }
 
     .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
       text-align: center;
-      padding: 10px;
     }
 
     /*.header {
@@ -49,14 +49,7 @@
   </style>
 
 </head>
-<?php //include "layout/navbar.php" 
-?>
-<ul>
-  <li><a href="#home"><img src="./img/cooking-man.png" height="50" width="50" /></a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
+<?php include "layout/navbar.php" ?>
 
 <body>
 

@@ -1,8 +1,9 @@
-<ul>
-  <li class="logo"><a href="#home"><img src="img/cooking-man.png" height="20" width="20" /></a></li>
-</ul>
-<ul>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
+<div class="navbar">
+  <a href="#home">
+    <img src="img/cooking-man.png" height="30" width="30" />
+    Dona Rita<br>             Marmitas
+  </a>
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</div>
