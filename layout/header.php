@@ -6,6 +6,23 @@
   <title>Dona Rita Marmitas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    body {
+      margin: 0;
+    }
+
+    .main {
+      padding: 16px;
+      margin-top: 70px;
+      height: 1500px;
+      /* Used in this example to enable scrolling */
+    }
+    .grid-container{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto auto;
+      grid-auto-flow: column;
+    }
+
     /*Estilo da barra de navegacao*/
     .navbar {
       overflow: hidden;
@@ -39,6 +56,13 @@
       color: white;
       text-align: center;
     }
+    .grid-container h4{
+      text-align: center;
+    }
+    .grid-container a img{
+      border-image: auto;
+    }
+
 
     /*.header {
   text-align: center;
@@ -49,11 +73,6 @@
   </style>
 
 </head>
-<?php include "layout/navbar.php" ?>
+<?php include "layout/navbar.php"; ?>
 
 <body>
-
-
-
-  <div class="central">
-    <div class="principal">
