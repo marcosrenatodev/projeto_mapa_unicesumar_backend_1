@@ -15,7 +15,6 @@ include("dados/receitas.php");
         
       </div>
     <?php
-    $receita_clique = $value;
     }
     ?>
     <!-- array(4) { ["id"]=> string(1) "1" 

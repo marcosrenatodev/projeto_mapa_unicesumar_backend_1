@@ -55,8 +55,13 @@
       color: black;
       text-align: center;
     }
+
     .grid-container h4{
       text-align: center;
+    }
+
+    .view-recipe{
+      box-sizing: border-box;
     }
   </style>
 
