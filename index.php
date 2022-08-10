@@ -10,7 +10,8 @@ include("dados/receitas.php");
     foreach ($receitas as $key => $value) {
     ?>
       <div class="grid-item">
-        <a href="pagina.php?id=<?= $value['id']  ; ?>"><img src=<?= $value['imagem']; ?> width="320" height="180"></a>
+        <a href="pagina.php?id=<?= $value['id'] . "&nome=" .  $value['nome'] . "&descricao=" . $value['descricao'] . "&imagem=" . $value['imagem']; ?>">
+        <img src=<?= $value['imagem']; ?> width="320" height="180"></a>
         <h4 class="tituloReceita"><?= $value['nome']; ?></h4>
         
       </div>
