@@ -14,13 +14,13 @@
       padding: 16px;
       margin-top: 70px;
       height: 1500px;
-      /* Used in this example to enable scrolling */
     }
     .grid-container{
       display: grid;
       grid-template-columns: auto auto auto auto;
       grid-template-rows: auto auto;
       grid-auto-flow: column;
+      align-content: center;
     }
 
     /*Estilo da barra de navegacao*/
@@ -36,7 +36,7 @@
       float: left;
       display: block;
       color: #f2f2f2;
-      text-align: center;
+      text-align: auto;
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
@@ -52,24 +52,12 @@
       left: 0;
       bottom: 0;
       width: 100%;
-      background-color: #333;
-      color: white;
+      color: black;
       text-align: center;
     }
     .grid-container h4{
       text-align: center;
     }
-    .grid-container a img{
-      border-image: auto;
-    }
-
-
-    /*.header {
-  text-align: center;
-  padding: 10px;
-  background-color: rgb(46, 92, 219);
-  color: aliceblue;
-}*/
   </style>
 
 </head>
