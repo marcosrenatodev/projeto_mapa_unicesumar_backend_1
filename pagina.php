@@ -8,27 +8,40 @@ var_dump($receita_id)
 
 
 
-<div class="main">
+<div class="main-recipe">
   <div class="view-recipe">
     <?php
     foreach ($receitas as $key => $value) {
 
       if ($value['id'] == $receita_id) {
     ?>
-        <img src=<?= $value['imagem']; ?> width="430" height="270">
-        <h4 class="tituloReceita"><?= $value['nome']; ?></h4>
-        <p> <?php echo $value['descricao'] ?></p>
-        <p> <?php echo $value['tamanho'] ?></p>
-        <p> <?php echo $value['preco'] ?></p>
-        <a href="javascript:history.back()">Voltar</a>
-
+        <div class="image">
+          <img src=<?= $value['imagem']; ?> style="height: 360px;">
+        </div>
+        <div class="box-info">
+          <div>
+            <h1 class="tituloReceita"><?= $value['nome']; ?></h1>
+          </div>
+          <div class="descricao">
+            <p> <?php echo $value['descricao'] ?></p>
+          </div>
+          <div class="tamanho">
+            <p> <?php echo $value['tamanho'] ?></p>
+          </div>
+          <div>
+            <p class="preco"> <?php echo $value['preco'] ?></p>
+          </div>
+          <div class="voltar">
+            <a href="javascript:history.back()" class="btn">Voltar</a>
+          </div>
+        </div>
     <?php
       }
     }
     ?>
   </div>
-
 </div>
+
 
 
 
