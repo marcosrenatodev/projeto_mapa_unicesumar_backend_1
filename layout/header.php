@@ -27,7 +27,7 @@
     /*Estilo da barra de navegacao*/
     .navbar {
       overflow: hidden;
-      background-color: #333;
+      background-color: brown;
       position: fixed;
       top: 0;
       width: 100%;
@@ -56,6 +56,8 @@
       color: black;
       text-align: center;
     }
+
+    
 
     .grid-container h4 {
       text-align: center;
