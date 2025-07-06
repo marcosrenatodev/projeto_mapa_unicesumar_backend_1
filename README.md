@@ -1,10 +1,106 @@
-# Dona Rita Marmitas
+# 🗺️ Projeto MAPA Unicesumar - Dona Rita Marmitas
 
->Dona Rita, mulher guerreira, viúva a 15 anos, nunca deixou faltar o leite e o pão para suas crianças, contudo está passando por muitas dificuldades financeiras para alimentar sua família. Dona Rita, faz marmitas variadas e vende de porta em porta com a ajuda de seus filhos na cidade de Palmas no interior do Paraná. Um certo dia, ela foi abordada polo empresário e acadêmico Marcos Renato que atualmente atual no setor têxtil, e vendo o seu esforço convidou-a para uma conversa sobre como expandir seus negócios. O empresário Marcos Renato que também é estudante de SI, disse que iria construir um site simples como se fosse um catálogo para ela divulgar suas marmitas e todo o processo de venda e entrega ela iria gerenciar da forma independente do site. Este site não teria custo por 2 anos para a dona Rita. O site seria estático tendo apenas: um cabeçalho, um rodapé personalizado, as fotos das marmitas, e os seus preços na página principal. Ao clicar na foto da marmita, seria apresentado em outra tela os ingredientes desta marmita.
+Este repositório contém o projeto desenvolvido para a disciplina **MAPA** da graduação em **Tecnologia em Sistemas para Internet** na **Unicesumar**. O objetivo foi criar um site estático para a **Dona Rita Marmitas**, utilizando **PHP** para a gestão dos dados e **HTML/CSS** para a interface do usuário.
 
-Agora que conhecemos o caso da Dona Rita, vamos implementar um site com os recursos de HTML, PHP e um pouco de CSS para dar uma vida ao site.
+---
 
-## Regras:
-1) Ao carregar a página principal do site, é necessário que apresente um cabeçalho e um rodapé personalizado para a Dona Rita, lembre-se de colocar sua assinatura no rodapé.
-2) Ainda na página inicial é necessário que liste todas as marmitas que Dona Rita produz utilizando uma estrutura de repetição. Para este caso, é necessário que os dados: nome da marmita, tamanho, preço, imagem e ingredientes, estejam em um array multidimensional.
-3) Ao clicar em uma marmita, a mesma será aberta em uma outra página contendo todas as informações da marmita selecionada. Para isso você deverá passar o código da marmita e busca-lo no array utilizando a estrutura de repetição e condição para exibir apenas os dados da marmita selecionada, além apresentar os dados para contato com a dona Rita.
+## 🍽️ O Caso de Negócio: Dona Rita Marmitas
+
+Dona Rita, uma empreendedora dedicada, enfrentava desafios financeiros. Com o apoio de seus filhos, ela vendia marmitas caseiras em *Palmas, Paraná*. Observando seu esforço, o empresário e estudante **Marcos Renato** propôs a criação de um site simples, atuando como um **catálogo online**, para ampliar a visibilidade de seus produtos.
+
+O site foi concebido como uma ferramenta de divulgação sem custos por dois anos, permitindo que Dona Rita gerenciasse as vendas e entregas de forma independente.
+
+---
+## Demonstração
+[Dona-Rita-Marmitas.webm](https://github.com/user-attachments/assets/78c21703-0bb4-4898-847b-9af33707ec2c)
+
+
+---
+## 🚀 Funcionalidades Implementadas
+
+O site foi desenvolvido como um **catálogo estático**, oferecendo as seguintes funcionalidades:
+
+- **Cabeçalho e Rodapé Personalizados**  
+  Cada página exibe um cabeçalho e um rodapé customizados para a marca *Dona Rita Marmitas*, incluindo a assinatura do desenvolvedor no rodapé.
+
+- **Listagem Dinâmica de Marmitas**  
+  Na página principal (`index.php`), todas as marmitas são listadas dinamicamente. Os dados de cada marmita (nome, tamanho, preço, imagem e ingredientes) são recuperados de um **array multidimensional em PHP**.
+
+- **Página de Detalhes da Marmita**  
+  Ao clicar na imagem de uma marmita, o usuário é redirecionado para uma página de detalhes (`detalhes.php`). Essa página exibe todas as informações da marmita selecionada, buscando os dados no mesmo array através de um **ID único** passado via URL. Também são apresentadas as informações de contato da Dona Rita para facilitar os pedidos.
+
+---
+
+## 💻 Tecnologias Utilizadas
+
+- **PHP**: Responsável pela lógica de negócio e geração dinâmica do conteúdo HTML.
+- **HTML5**: Utilizado para a estruturação do conteúdo das páginas.
+- **CSS3**: Aplicado para estilizar o site com uma apresentação agradável e responsiva.
+
+---
+
+## 💾 Armazenamento de Dados (Sem Banco de Dados)
+
+Conforme a especificação do projeto, **não foi utilizado banco de dados**. Todos os dados das marmitas estão armazenados em um **array estático multidimensional** no arquivo:
+
+
+A estrutura do array pode ser visualizada no arquivo:
+```
+dados/receitas.php
+```
+
+
+---
+
+## ⚙️ Como Rodar o Projeto Localmente
+
+Para configurar e executar este projeto em seu ambiente local, siga os passos abaixo:
+
+### 📥 Clonar o Repositório
+
+Abra seu terminal ou prompt de comando e execute:
+
+```
+git clone https://github.com/marcosrenatodev/projeto_mapa_unicesumar_backend_1.git
+```
+
+---
+
+### 🖥️ Executar com o Servidor Embutido do PHP
+
+Se você tiver o PHP instalado localmente, navegue até a pasta do projeto e execute:
+
+```
+cd projeto_mapa_unicesumar_backend_1
+php -S localhost:8000
+```
+
+Depois, acesse no navegador:
+```
+http://localhost:8000
+```
+
+
+---
+
+## 📂 Estrutura do Repositório
+
+A estrutura de diretórios do projeto é organizada da seguinte forma:
+
+```
+projeto_mapa_unicesumar_backend_1/
+├── dados/                  # Contém o arquivo PHP com o array de dados das marmitas
+│   └── receitas.php
+├── css/                    # Contém os arquivos CSS para estilização
+│   └── style.css
+├── img/                    # (Opcional) Pasta para futuras imagens locais das marmitas
+├── index.php               # Página principal que lista todas as marmitas
+├── detalhes.php            # Página que exibe os detalhes de uma marmita específica
+└── README.md               # Este arquivo de documentação
+```
+
+---
+
+## 📞 Contato
+
+Para quaisquer dúvidas ou informações adicionais sobre este projeto, sinta-se à vontade para entrar em contato.
